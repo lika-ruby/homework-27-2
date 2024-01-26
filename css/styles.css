@@ -1,0 +1,70 @@
+.aside {
+  background-color: grey;
+  height: 100dvh;
+  width: 250px;
+  padding: 50px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-84%);
+  transition: transform 1s;
+}
+
+.aside:hover {
+  transform: translateX(0%);
+}
+
+.aside-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.aside-link {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: color 1s;
+}
+
+.aside-link:hover {
+  color: orange;
+}
+
+.aside-figure {
+  height: 15px;
+  width: 15px;
+  background-color: orange;
+  border: 2px solid black;
+  transform: rotate(45deg);
+  transition: transform 1s;
+}
+
+.aside-figure:hover {
+  transform: rotate(405deg);
+}
+
+.aside-link:hover .aside-figure {
+  transform: rotate(405deg);
+}
+
+.aside-text {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: color 1s;
+  transform: rotate(90deg) translateY(-50%);
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transition: opacity 0.75s;
+}
+
+.aside:hover .aside-text {
+  opacity: 0;
+}
